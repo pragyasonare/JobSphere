@@ -1,5 +1,5 @@
 import axios from "axios";
-const API_URL = "http://localhost:8800/api-v1";
+const API_URL = "https://jobsphere-backend-jfkc.onrender.com";
                
 
 export const API = axios.create({
