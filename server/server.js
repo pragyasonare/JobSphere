@@ -22,7 +22,10 @@ const PORT = process.env.PORT || 8800;
 dbConnection();
 
 //middlewares
-app.use(cors())
+app.use(cors({
+  origin : `https://jobsphere-87xx.onrender.com`,
+  credentials: true,
+}));
 app.use(xss())
 app.use(mongoSanitize());
 app.use(bodyParser.json())
